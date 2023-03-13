@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Car Retail</title>
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="nav-main">
+            <span class="logo">
+                <img src="imgs/logo.png" alt="">
+            </span>
+            <ul class="nav-items">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span class="expand">
+                <p class="pobox">P.O.BOX 1642,Concord,NC 28026</p>
+                <p class="mail">customerservice@dentprodigy.com</p>
+            </span>
+        </nav>
+        <nav class="nav-second">
+            <ul class="nav-items">
+                <li><a href="#">What is PDR?</a></li>
+                <li><a href="#">Hail Demage</a></li>
+                <li><a href="#">Motorcycle PDR</a></li>
+                <li><a href="#">Extreme PDR</a></li>
+                <li><a href="#">Get a free quote</a></li>
+            </ul>
+        </nav>
+        <!-- Akhir navbar -->
+
+        <!-- header -->
+        <header>
+            <div class="process">
+                <img src="imgs/paintless-dent-repair-spring-hill.png" alt="">
+                <div class="box">
+                    <div class="card">
+                        <h3>Paintless Dent Removal</h3>
+                        <img src="imgs/hammer.png" alt="">
+                    </div>
+                    <div class="card">
+                        <h3>Hail Damage</h3>
+                        <img src="imgs/car-wash.png" alt="">
+                    </div>
+                    <div class="card">
+                        <h3>Motorcycle PDR</h3>
+                        <img src="imgs/motorbike.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>Contact Us:</h2>
+                <p>980-785-DENT</p>
+                <p>customerservice@dentprodigy.com</p>
+                <p>P.O.BOX 1642,Concord,NC 28026</p>
+            </div>
+        </header>
+    </div>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200
+      });
+    </script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script>
+        gsap.from('.nav-main .logo', {opacity: 0, x: -100, duration: 3.8, ease: 'elastic', rotate: 360})
+    </script>
+</body>
+</html>
