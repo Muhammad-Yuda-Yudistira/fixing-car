@@ -7,6 +7,7 @@ body {
     color: rgba(0, 35, 91, .8);
     background-color: rgb(152, 223, 214);
     margin-bottom: 2000px;
+    overflow-x: hidden;
 }
 .nav-main .nav-items a, .nav-second .nav-items a {
     text-decoration: none;
@@ -54,10 +55,12 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    color: rgba(255, 221, 131, .85);
+    /* color: rgba(255, 221, 131, .85); */
+    color:goldenrod;
 }
 .nav-main .expand p {
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* navbar 2 section */
 .nav-second .nav-items {
@@ -67,17 +70,23 @@ body {
     justify-items: center;
     /* profiles */
     width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
     list-style: none;
     gap: 3px;
-    background-color: rgba(255, 221, 131, .85);
+    background-color: brown;
 }
 .nav-second .nav-items li {
     background-color: rgba(152, 223, 214,1);
     padding: 0px 3px;
 }
 .nav-second .nav-items li a:hover {
-    background-color: rgba(255, 221, 131, .4);
-    color: rgba(226, 24, 24, .6);
+    color: rgba(165, 42, 42, 0.9);
+    font-weight: bold;
+}
+.nav-second .nav-items a {
+    color: rgba(165, 42, 42, 0.6);
 }
 
 /* header */
@@ -85,14 +94,16 @@ header {
     width: 100vw;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,.8));
 }
 header .process {
     background-color: azure;
     display: flex;
 }
-.process img {
-    background: linear-gradient(rgba(226, 24, 24, .9) 20%, rgba(255,255,255,1) 50%), url(../imgs/moroccan-flower.png);
+.process .bg {
+    background: linear-gradient(rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0.904) 50%), url(../imgs/moroccan-flower.png);
     background-blend-mode: difference;
+    filter:saturate(.15);
 }
 .process .box {
     width: 100%;
@@ -100,8 +111,9 @@ header .process {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgba(226, 24, 24, .9) 20%, rgba(255,255,255,1) 50%), url(../imgs/moroccan-flower.png);
+    background: url(../imgs/moroccan-flower.png), rgb(255, 255, 255);
     background-blend-mode: difference;
+    padding-top: 12px;
 }
 .process .card {
     display: flex;
@@ -110,16 +122,24 @@ header .process {
     height: 100px;
 }
 .process .card h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(211, 227, 253);
-    text-shadow: 0px 0px 1px rgb(245, 248, 196);
+    font-family: 'Helvetica', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 12px;
 }
 .process .card img {
-    width: 50px;
+    width: 45px;
     border-radius: 50%;
     padding:5px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8);
 } 
+.process .card svg {
+    width: 45px;
+    border-radius: 50%;
+    padding:5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
 /* contact section */
 header .contact {
     width: 100%;
@@ -146,4 +166,81 @@ header .contact::before {
     right: 0;
     background-color: rgba(0, 35, 91, .3);;
     position: absolute;
+}
+/* about section */
+.about {
+    width: 90vw;
+    background-color: brown;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-items: end;
+    position: relative;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,.6));
+}
+.about-text {
+    width: 80%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: .5fr 2fr;
+    margin: auto;
+}
+.about-text h1 {
+    background-image: url(../imgs/about-1.jpg);
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: left;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 32px;
+}
+.about-text p {
+    padding-left: 30px;
+}
+.about-pict {
+    width:60%;
+    height: 60vh;
+    /* overflow: hidden; */
+    clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%, 0 100px, 100px 0);
+}
+.about-pict img {
+    height: 120%;
+}
+/* form and excess */
+.box {
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    gap: 10px;
+    width: 100vmax;
+    background-color: goldenrod;
+}
+/* form */
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.masukan {
+    display: grid;
+}
+.form input, .form textarea {
+    width: 240px;
+}
+.form button {
+    margin: 10px 60px 0;
+    padding:5px 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgba(0, 35, 91, .8);
+}
+/* excess */
+.excess {
+    padding-bottom: 20px;
+}
+.excess .card {
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+.excess .card img {
+    width: 70px;
 }
