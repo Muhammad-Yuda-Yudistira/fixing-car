@@ -7,7 +7,6 @@ Icon by <a class="link_pro" href="https://freeicons.io/profile/101755">Notachai 
 on <a href="https://freeicons.io">freeicons.io</a>
 about:
 Photo by <a href="https://unsplash.com/@olav_tvedt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olav Tvedt</a> on <a href="https://unsplash.com/images/things/car?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-Photo by <a href="https://unsplash.com/@samuele_piccarini?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuele Errico Piccarini</a> on <a href="https://unsplash.com/images/things/car?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 excess:
 <a href="https://www.flaticon.com/free-icons/low-cost" title="low cost icons">Low cost icons created by iconfield - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/clock" title="clock icons">Clock icons created by Freepik - Flaticon</a>
