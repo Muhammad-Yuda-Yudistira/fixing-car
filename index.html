@@ -7,6 +7,8 @@
 
     <title>Car Retail</title>
 
+    <!-- google captcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my css -->
@@ -81,7 +83,7 @@
                 <p contenteditable>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, explicabo iure nulla nam aut blanditiis quidem earum excepturi saepe dolore, beatae ab quas eius illum tenetur temporibus alias reprehenderit. Nesciunt reiciendis eveniet laboriosam aperiam asperiores totam maiores quo corporis, perferendis quibusdam vitae, voluptates quasi. Dignissimos rem distinctio perferendis velit incidunt!</p>
             </div>
             <div class="about-pict">
-                <img src="imgs/about-1.jpg" alt="">
+                <img src="imgs/about-1.jpg" title="a white Car">
             </div>
         </section>
         <!-- form contact and excess -->
@@ -109,6 +111,7 @@
                         <label for="message">Message:</label>
                         <textarea name="" id="message" cols="30" rows="10"></textarea>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
                     <button type="submit">Send</button>
                 </form>
             </section>
