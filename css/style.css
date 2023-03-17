@@ -504,6 +504,7 @@ footer.main-footer img {
     .form {
         width: 100vw;
         padding: 30px 0;
+        justify-content: center;
     }
     .excess {
         width: 100vw;
