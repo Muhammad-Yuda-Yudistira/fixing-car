@@ -10,3 +10,13 @@ $('.scroller').on('click', function(e) {
 
     e.preventDefault();
 })
+
+// menu hamburger
+const tombol = document.querySelector('.checkbox input');
+const meMain = document.querySelector('.nav-main .nav-items');
+const meSec = document.querySelector('.nav-second .nav-items');
+
+tombol.addEventListener('click', function() {
+    meMain.classList.toggle('slide')
+    meSec.classList.toggle('slide')
+})
