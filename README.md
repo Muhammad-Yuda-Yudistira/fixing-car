@@ -18,6 +18,7 @@ https://fixing-car.vercel.app/
 - Landing Page
 - Responsive mobile
 - Media sosial links
+- live edit content non-permanent
 
 ## Tech Stack
 - HTML
